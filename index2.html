@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/style.css">
-     <script src="assets/main.js"></script>
-     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <title>login</title>
 </head>
+
 <body class="body2">
-    <a href="index.html"><i class="bi bi2 bi-skip-backward-circle"></i></a>
+    <div class="topo" id="#topo">
+        <div class="mae">
+            <a href="index.html"><img src="assets/imagens/SH.png" alt="logo"></a>
+            <div class="mae2">
+                <ul>
+                    <li><a href="busca.html"><i class="bi bi-search"></i></a></li>
+                    <li><a href="carrinho.html"><i class="bi bi-cart3"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <form method="get" class="login">
         <h5 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">login</h5>
         <i class="bi bi2 bi-person"></i>
-    <div class="email">
-        <label for="email"></label>
-        <input type="email" name="" id="email" placeholder="Email">
-    </div>
-    <div>
-        <label for="senha"></label>
-        <input type="password" name="" id="senha" placeholder="senha">
-    </div>
-    <div>
-        <input type="submit" value="entrar">
-    </div>
-     <a href="index3.html">fazer cadastro</a>
-</form>
+        <div class="email">
+            <label for="email"></label>
+            <input type="email" name="" id="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="senha"></label>
+            <input type="password" name="" id="senha" placeholder="senha">
+        </div>
+        <div>
+            <input type="submit" value="entrar" id="entrar">
+        </div>
+        <div>
+            <a href="recuperarsenha.html">mudar senha</a>
+        </div>
+        <div>
+            <a href="index3.html" class="ts">fazer cadastro</a>
+        </div>
+
+    </form>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="assets/main.js"></script>
 </body>
+
 </html>

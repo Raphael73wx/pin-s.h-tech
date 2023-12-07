@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/main.js"></script>
+    <link rel="stylesheet" href="vendor/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
 </head>
 
 <body class="body3">
-    <button type="button" onclick="history.back()" id="backBtn" class="sp"><i
-            class="bi bi2 bi-skip-backward-circle"></i></button>
+    <div class="topo" id="#topo">
+        <div class="mae">
+            <a href="index.html"><img src="assets/imagens/SH.png" alt="logo"></a>
+            <div class="mae2">
+                <ul>
+                    <li><a href="busca.html"><i class="bi bi-search"></i></a></li>
+                    <li><a href="carrinho.html"><i class="bi bi-cart3"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <form method="get" class="login">
         <h5 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">cadastro</h5>
         <i class="bi bi2 bi-person"></i>
@@ -32,11 +41,15 @@
         <div>
             <input type="submit" value="cadastrar">
         </div>
-        <a href="index2.html">fazer login</a>
+        <a href="index2.html" class="ts">fazer login</a>
     </form>
     <div>
         
     </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
