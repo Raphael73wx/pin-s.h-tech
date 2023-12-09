@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* faixa azul usada na pagina home*/
 .faixa {
     animation: changeBackgroundColor 10s infinite;
@@ -12,6 +13,7 @@ body {
     margin: auto;
     border-radius: 10px;
 }
+
 /* fim da faixa*/
 
 /*classes usadas para todas as paginas */
@@ -23,6 +25,7 @@ body {
 .container-fluid {
     padding: 0;
 }
+
 /*fim das classes mundiais*/
 
 /*estilo da nav usada em todas as paginas*/
@@ -31,6 +34,7 @@ body {
     height: 10vh;
     animation: changeBackgroundColor 10s infinite;
 }
+
 .topo>.bi-person {
     margin-right: 20px;
     font-size: 35px;
@@ -86,11 +90,93 @@ body .topo .mae a {
 .topo>.mae>.mae2>ul>li {
     margin-top: 10px;
 }
+
 /*Fim do estilo da navbar*/
 
 
 /* comeco da pagina de s.o.s */
- 
+.pai {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.pai>.meio {
+    margin: auto;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+}
+.pai>.meio>div>.fale{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.pai>.meio>div>.text{
+    width: 400px;
+}
+.pai a {
+    color: black;
+    text-decoration: none;
+}
+.pai .cancelar{
+    margin-top: 15px;
+}
+.meio .cancelar-filho{
+    height: 20vh;
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+}
+.cancelar-filho .row1,
+.cancelar-filho .row2{
+    width: 100%;
+    height: 100%;
+
+}
+.cancelar-filho .row1,
+.cancelar-filho .row2{  
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+.cancelar-filho .row1:hover,
+.cancelar-filho .row2:hover{
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+.row1>.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row1>.col-9{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.row1>.col-1>a>.bi-arrow-left-circle-fill{
+    font-size:30px;
+}
+.row1{
+   display: flex ;
+}
+.row1>.col-9>a>span{
+    margin: 0;
+}
+
+.row1>.col-9>a>.span{
+    margin: 0;
+    font-size: 10px;
+}
+
+
+
 
 /*fim da pagina s.o.s*/
 
@@ -117,6 +203,7 @@ body .topo .mae a {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 .container {
     margin: auto;
     margin-top: 50px;
@@ -124,6 +211,7 @@ body .topo .mae a {
     max-width: 100%;
     padding: 2px 16px;
 }
+
 /* fim da estilização dos cards*/
 
 /*estilo do formulario de login/cadastro*/
@@ -138,10 +226,11 @@ body .topo .mae a {
 
 }
 
-.login .bi-person   {
+.login .bi-person {
     font-size: 100px;
 }
-.login .bi-persond   {
+
+.login .bi-persond {
     padding-top: 50px;
 }
 
@@ -172,13 +261,9 @@ body .login a {
 .bi-search {
     margin-right: 15px;
 }
+
 /*fim do estilo do formulario*/
 
-.centro {
-    width: 100vw;
-    background-color: black;
-    height: 100vh;
-}
 /*estilização do footer*/
 .f1 {
     height: 40vh;
@@ -208,28 +293,33 @@ body .login a {
     margin: 5px;
     margin-right: 5px;
 }
+
 /*fim da estilização do footer*/
 
 /*estilização dos botões e inputs*/
-.cadastrar{
+.cadastrar {
     margin-top: 10px;
 }
-.fzl{
+
+.fzl {
     margin-top: 30px;
 }
-.senha{
-      display: flex;
-      flex-direction: column;
-      padding-top: 30px;
-}   
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
 .ts {
     margin-top: 30px;
 }
+
 input[type=text] {
     width: 200px;
     border-radius: 30px;
     background-color: white;
-    border: none   ;
+    border: none;
     margin-bottom: 5px;
 }
 
@@ -273,8 +363,9 @@ input[type=submit] {
 
 input[type=submit]:focus {
     outline: none;
-    border: 2px solid red   ;
+    border: 2px solid red;
 }
+
 /*fim das estilizações de botões e input*/
 
 /*efeito rgb usado em todas paginas */
@@ -299,4 +390,5 @@ input[type=submit]:focus {
         background-color: #abf2ff;
     }
 }
+
 /*fim do efeito rgb*/
